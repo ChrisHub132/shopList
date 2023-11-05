@@ -14,13 +14,15 @@
       {% for product in products %}
         <div>
           <a href="#">
-            <div>
-              <img src="{{ items.media.url }}" class="rounded-t-xl">
-            </div>
+            <!-- <div>
+              <img src="{{ product.image }}" class="rounded-t-xl">
+            </div> -->
 
             <div class="p6 bg-white rounded-b-xl">
               <h2 class=""text-2xl>{{ product.prodName }}</h2>
-              <p class="text-gray-500">Anzahl</p>
+              <label for="anzahl">Anzahl</label>
+              <!-- TO DO: get input Anzahl and POST to Liste to generate Einkaufsliste -->
+              <input type="number" name="anzahl" class="text-gray-500"></input>
 
             </div>
           </a>
